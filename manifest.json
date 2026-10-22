@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Читаемый веб для детей с низким зрением",
+  "version": "0.1.0",
+  "description": "Убирает рекламу и визуальный шум, увеличивает шрифт и озвучивает кнопки при наведении.",
+  "permissions": ["activeTab", "scripting"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Включить / выключить режим" },
+  "web_accessible_resources": [
+    {
+      "resources": ["fonts/*.woff2"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
